@@ -1,0 +1,199 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section CSS
+{
+    <link rel="stylesheet" href="~/css/Home.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+}
+
+@section JS
+{
+    <script src="~/js/slider.js"></script>
+}
+@* Header *@
+@await Component.InvokeAsync("Header")
+<section class="swiper mySwiper-1">
+    <img src="~/icons/arrow_left.svg" class="arrow-left-1" />
+    <img src="~/icons/arrow_right.svg" class="arrow-right-1" />
+    <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="~/images/background.jpg">
+        </div>
+        <div class="swiper-slide">
+            <img src="~/images/background.jpg">
+        </div>
+        <div class="swiper-slide">
+            <img src="~/images/background.jpg">
+        </div>
+        <div class="swiper-slide">
+            <img src="~/images/background.jpg">
+        </div>
+    </div>
+</section>
+<section class="best-deals">
+    <div class="title">Deals tốt nhất</div>
+    <div class="products-list">
+        <div class="product-box">
+            <img src="~/images/background.jpg" />
+            <div class="product-info">
+                <div class="product-name">Fitness and activity Tracker</div>
+                <div class="product-price">12.000.000 VNĐ</div>
+            </div>
+        </div>
+        <div class="product-box">
+            <img src="~/images/background.jpg" />
+            <div class="product-info">
+                <div class="product-name">Fitness and activity Tracker</div>
+                <div class="product-price">12.000.000 VNĐ</div>
+            </div>
+        </div>
+        <div class="product-box">
+            <img src="~/images/background.jpg" />
+            <div class="product-info">
+                <div class="product-name">Fitness and activity Tracker</div>
+                <div class="product-price">12.000.000 VNĐ</div>
+            </div>
+        </div>
+        <div class="product-box">
+            <img src="~/images/background.jpg" />
+            <div class="product-info">
+                <div class="product-name">Fitness and activity Tracker</div>
+                <div class="product-price">12.000.000 VNĐ</div>
+            </div>
+        </div>
+        <div class="product-box">
+            <img src="~/images/background.jpg" />
+            <div class="product-info">
+                <div class="product-name">Fitness and activity Tracker</div>
+                <div class="product-price">12.000.000 VNĐ</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="top10-selected">
+    <div class="left-side">
+        <div class="title">Top 10 selected Products on the Week</div>
+        <div class="navigate">
+            <img src="~/icons/arrow_left.svg" class="arrow-left-2" />
+            <img src="~/icons/arrow_right.svg" class="arrow-right-2" />
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img-wrapper">
+                        <img src="~/images/sample.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Samsung</div>
+                        <div class="price">12.000.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-wrapper">
+                        <img src="~/images/sample.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Samsung</div>
+                        <div class="price">12.000.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-wrapper">
+                        <img src="~/images/sample.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Samsung</div>
+                        <div class="price">12.000.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-wrapper">
+                        <img src="~/images/sample.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Samsung</div>
+                        <div class="price">12.000.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-wrapper">
+                        <img src="~/images/sample.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Samsung</div>
+                        <div class="price">12.000.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-wrapper">
+                        <img src="~/images/sample.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Samsung</div>
+                        <div class="price">12.000.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-wrapper">
+                        <img src="~/images/sample.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Samsung</div>
+                        <div class="price">12.000.000 VNĐ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="all-benefits">
+    <div class="benefit">
+        <img src="~/icons/truck.svg" />
+        <span class="st-cmt">From Delivery</span>
+        <span class="nd-cmt">from $40</span>
+    </div>
+    <div class="benefit">
+        <img src="~/icons/star.svg" />
+        <span class="st-cmt">Best quality</span>
+        <span class="nd-cmt">Brand</span>
+    </div>
+    <div class="benefit">
+        <img src="~/icons/time.svg" />
+        <span class="st-cmt">1 Year</span>
+        <span class="nd-cmt">for free Return</span>
+    </div>
+    <div class="benefit">
+        <img src="~/icons/comment.svg" />
+        <span class="st-cmt">Feedback</span>
+        <span class="nd-cmt">99% Real Data</span>
+    </div>
+    <div class="benefit">
+        <img src="~/icons/credit.svg" />
+        <span class="st-cmt">Payment</span>
+        <span class="nd-cmt">Secure</span>
+    </div>
+</section>
+
+<section class="sign-up-mail">
+    <div class="container">
+        <img src="~/icons/mail.svg" />
+        <div class="content">
+            <div class="title">Sign Up for Newsletter</div>
+            <div class="info">Signing up for a newsletter keeps you informed about the latest updates, news, and trends
+                in your areas of interest.
+            </div>
+        </div>
+        <div class="input-email">
+            <input placeholder="Enter your Email here" id="sign-up-email" type="text" />
+            <button>SUBCRIBE</button>
+        </div>
+    </div>
+</section>
+@* Footer *@
+@await Component.InvokeAsync("Footer")
