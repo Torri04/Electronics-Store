@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Fonts\\Questrial-Regular.woff2"
     },
     {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\css\\Customer.min.css",
+      "PackagePath": "staticwebassets\\css\\Customer.min.css"
+    },
+    {
       "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\css\\Home.min.css",
       "PackagePath": "staticwebassets\\css\\Home.min.css"
     },
@@ -17,8 +21,20 @@
       "PackagePath": "staticwebassets\\css\\Layout.min.css"
     },
     {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\css\\Redirect.min.css",
+      "PackagePath": "staticwebassets\\css\\Redirect.min.css"
+    },
+    {
       "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\css\\ResetCss.min.css",
       "PackagePath": "staticwebassets\\css\\ResetCss.min.css"
+    },
+    {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\css\\SignIn.min.css",
+      "PackagePath": "staticwebassets\\css\\SignIn.min.css"
+    },
+    {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\css\\SignUp.min.css",
+      "PackagePath": "staticwebassets\\css\\SignUp.min.css"
     },
     {
       "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\favicon.ico",
@@ -49,6 +65,10 @@
       "PackagePath": "staticwebassets\\icons\\fire.svg"
     },
     {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\icons\\laptop.svg",
+      "PackagePath": "staticwebassets\\icons\\laptop.svg"
+    },
+    {
       "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\icons\\location.svg",
       "PackagePath": "staticwebassets\\icons\\location.svg"
     },
@@ -61,8 +81,16 @@
       "PackagePath": "staticwebassets\\icons\\mail.svg"
     },
     {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\icons\\package.svg",
+      "PackagePath": "staticwebassets\\icons\\package.svg"
+    },
+    {
       "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\icons\\star.svg",
       "PackagePath": "staticwebassets\\icons\\star.svg"
+    },
+    {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\icons\\stat.svg",
+      "PackagePath": "staticwebassets\\icons\\stat.svg"
     },
     {
       "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\icons\\telephone.svg",
@@ -91,6 +119,18 @@
     {
       "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\images\\sample.jpg",
       "PackagePath": "staticwebassets\\images\\sample.jpg"
+    },
+    {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\js\\change_input.js",
+      "PackagePath": "staticwebassets\\js\\change_input.js"
+    },
+    {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\js\\check_password.js",
+      "PackagePath": "staticwebassets\\js\\check_password.js"
+    },
+    {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\js\\redirect.js",
+      "PackagePath": "staticwebassets\\js\\redirect.js"
     },
     {
       "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\js\\search.js",
@@ -329,6 +369,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\scss\\Customer.scss",
+      "PackagePath": "staticwebassets\\scss\\Customer.scss"
+    },
+    {
       "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\scss\\Home.scss",
       "PackagePath": "staticwebassets\\scss\\Home.scss"
     },
@@ -337,8 +381,20 @@
       "PackagePath": "staticwebassets\\scss\\Layout.scss"
     },
     {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\scss\\Redirect.scss",
+      "PackagePath": "staticwebassets\\scss\\Redirect.scss"
+    },
+    {
       "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\scss\\ResetCss.scss",
       "PackagePath": "staticwebassets\\scss\\ResetCss.scss"
+    },
+    {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\scss\\SignIn.scss",
+      "PackagePath": "staticwebassets\\scss\\SignIn.scss"
+    },
+    {
+      "Id": "D:\\ASP.NET Core MVC Project\\wwwroot\\scss\\SignUp.scss",
+      "PackagePath": "staticwebassets\\scss\\SignUp.scss"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ASP.NET Core MVC Project.Microsoft.AspNetCore.StaticWebAssets.props",

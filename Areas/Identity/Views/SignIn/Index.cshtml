@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "SignIn Page";
+}
+@section CSS
+{
+    <link rel="stylesheet" href="~/css/SignIn.min.css" />
+}
+@section JS
+{
+    <script src="~/js/check_password.js"></script>
+}
+@model InputSignIn
+
+<section class="signin">
+    <form asp-action="PostSignIn" asp-controller="SignIn" method="POST" class="signin-form">
+        <div class="title">Đăng nhập</div>
+        <div class="user">
+            <input asp-for="@Model.UserName" type="text" placeholder="" />
+            <label asp-for="@Model.UserName">Email</label>
+            <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+        </div>
+        <div class="pass">
+            <input asp-for="@Model.Password" placeholder="" />
+            <i class="icon-eye fa-solid fa-eye-slash"></i>
+            <label asp-for="@Model.Password">Mật khẩu</label>
+            <span asp-validation-for="@Model.Password" class="text-danger"></span>
+        </div>
+        <div class="remem-forget">
+            <div class="remember">
+                <input asp-for="@Model.Remember">
+                <label asp-for="@Model.Remember">Ghi nhớ đăng nhập</label>
+            </div>
+            <div class="forget">Quên mật khẩu</div>
+        </div>
+        <button type="submit">Đăng nhập</button>
+        <div class="last-row">
+            <div class="not-signup">Chưa đăng ký tài khoản?</div>
+            <a asp-action="Index" asp-controller="SignUp" class="signup">Đăng ký</a>
+        </div>
+    </form>
+</section>

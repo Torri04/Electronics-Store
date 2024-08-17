@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Redirect page";
+}
+@section CSS
+{
+    <link rel="stylesheet" href="~/css/Redirect.min.css" />
+}
+@section JS
+{
+    <script src="~/js/redirect.js"></script>
+}
+@model Redirect.Message
+
+<section class="redirect">
+    <div class="redirect-card">
+        <div class="header-title">
+            <span>@Model.title</span>
+        </div>
+        <div class="content">
+            @Html.Raw(@Model.htmlcontent)
+        </div>
+        <div class="footer-title">
+            <span>Chuyển đến</span> - <a class="re-href" href="@Model.urlredirect">@Model.urlname</a>
+        </div>
+    </div>
+    <div class="second" hidden>@Model.secondwait</div>
+</section>

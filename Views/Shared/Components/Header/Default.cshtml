@@ -1,3 +1,8 @@
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
 <header class="header">
     <container class="ctn-1">
         <section>
@@ -33,18 +38,27 @@
                 </div>
             </div>
             <a class="icon"><img src="~/icons/cart.svg" alt=""></a>
-            <div class="account">
-                <img src="~/icons/user.svg" alt="">
-                <span>MY ACCOUNT</span>
-            </div>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a class="account">
+                    <img src="~/icons/user.svg" alt="">
+                    <span>@UserManager.GetUserName(User)!</span>
+                </a>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-controller="SignIn" asp-action="Index" class="account">
+                    <img src="~/icons/user.svg" alt="">
+                    <span>ĐĂNG NHẬP</span>
+                </a>
+            }
+
         </section>
         <section class="ss-2">
-            <a href="#">All Categories</a>
-            <a href="#">Accesories</a>
-            <a href="#">Computers</a>
-            <a href="#">Smartphones</a>
-            <a href="#">Gaming Equipments</a>
-            <a href="#">Headphones</a>
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Bài viết</a>
+            <a href="#">Liên hệ</a>
             <a href="#" class="hot-deal">
                 <img src="~/icons/fire.svg" alt="">
                 <span>HOT DEALS</span>

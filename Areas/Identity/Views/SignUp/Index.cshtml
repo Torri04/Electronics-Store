@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "SignUp page";
+}
+@section CSS
+{
+    <link rel="stylesheet" href="~/css/SignUp.min.css" />
+}
+@section JS
+{
+    <script src="~/js/check_password.js"></script>
+    <script src="~/js/change_input.js"></script>
+}
+@model InputSignUp
+
+<section class="signup">
+    <form asp-action="OnPostAsync" method="POST" class="signup-form">
+        <div class="title">Đăng ký</div>
+        <div class="username ipt">
+            <input asp-for="@Model.UserName" placeholder="" />
+            <label asp-for="@Model.UserName"></label>
+            <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+        </div>
+        <div class="name ipt">
+            <input asp-for="@Model.FullName" placeholder="" />
+            <label asp-for="@Model.FullName"></label>
+            <span asp-validation-for="@Model.FullName" class="text-danger"></span>
+        </div>
+        <div class="email ipt">
+            <input asp-for="@Model.Email" type="text" placeholder="" />
+            <label asp-for="@Model.Email"></label>
+            <span asp-validation-for="@Model.Email" class="text-danger"></span>
+        </div>
+        <div class="pass ipt">
+            <input asp-for="@Model.Password" placeholder="" />
+            <i class="icon-eye fa-solid fa-eye-slash"></i>
+            <label asp-for="@Model.Password"></label>
+            <span asp-validation-for="@Model.Password" class="text-danger"></span>
+        </div>
+        <div class="re-pass ipt">
+            <input asp-for="@Model.ConfirmPassword" placeholder="" />
+            <i class="icon-eye fa-solid fa-eye-slash"></i>
+            <label asp-for="@Model.ConfirmPassword"></label>
+            <span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
+        </div>
+        <div class="privacy ipt">
+            <input asp-for="@Model.Commitment">
+            <label asp-for="@Model.Commitment">Tôi cam kết tuân theo <i>Chính sách bảo mật</i> và <i>Điều khoản sử
+                    dụng</i> của
+                ...</label>
+            <span asp-validation-for="@Model.Commitment" class="text-danger"></span>
+        </div>
+        <button type="submit">Đăng ký</button>
+        <div class="last-row">
+            <div class="have-signin">Đã đăng ký tài khoản?</div>
+            <a asp-action="Index" asp-controller="SignIn" class="signin">Đăng nhập</a>
+        </div>
+    </form>
+</section>
